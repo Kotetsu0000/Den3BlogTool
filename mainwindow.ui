@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>561</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>561</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>電子計算機研究会ブログ作成ツール</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/Dicon.ico</normaloff>icon/Dicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLineEdit" name="lineEdit_Title">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>541</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="maxLength">
+     <number>35</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Title">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>461</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>タイトル(35文字以内, main.htmlのh2タグと同一のものにすること)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Overview">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>171</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>概要(140文字以内)</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QCheckBox" name="checkBox_HTML">
+       <property name="text">
+        <string>HTML</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_3DCG">
+       <property name="text">
+        <string>3DCG</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_Game">
+       <property name="text">
+        <string>ゲーム</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_Other">
+       <property name="text">
+        <string>その他</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_Author">
+       <item>
+        <property name="text">
+         <string>選択してください。</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>丁字路の人</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>考えるリンゴ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>トイレの紙</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>pine</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>kirby</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>TOEICアンチ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ライム</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>音無</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>こてつ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Satan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>しでん</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>五字きのこ</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_Category">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>75</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>カテゴリー</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Author">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>230</y>
+      <width>75</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>書いた人</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Output">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>81</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>出力</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_Overview">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>541</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>551</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>検索ワード(タイトルに含まれていないものがある場合, 複数の場合は, で区切る)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Word">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>541</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
